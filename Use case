@@ -1,0 +1,93 @@
+<mxfile host="app.diagrams.net" modified="2021-09-23T06:58:38.728Z" agent="5.0 (Windows)" etag="s1enGwXKvRiPydxcUkc6" version="15.3.0" type="github">
+<diagram id="rbPn6aWtASJ3D76DI43U" name="Page-1">
+<mxGraphModel dx="1038" dy="495" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+<root>
+<mxCell id="0" />
+<mxCell id="1" parent="0" />
+<mxCell id="Qk2cMjkQ7BWh0A80oVp3-2" edge="1" parent="1" source="SoOGTyhPSGBBE9BSFK4O-1" target="SoOGTyhPSGBBE9BSFK4O-9">
+<mxGeometry relative="1" as="geometry" />
+</mxCell>
+<mxCell id="Qk2cMjkQ7BWh0A80oVp3-4" edge="1" parent="1" source="SoOGTyhPSGBBE9BSFK4O-1" target="SoOGTyhPSGBBE9BSFK4O-10">
+<mxGeometry relative="1" as="geometry" />
+</mxCell>
+<mxCell id="Qk2cMjkQ7BWh0A80oVp3-5" edge="1" parent="1" source="SoOGTyhPSGBBE9BSFK4O-1" target="SoOGTyhPSGBBE9BSFK4O-11">
+<mxGeometry relative="1" as="geometry" />
+</mxCell>
+<mxCell id="SoOGTyhPSGBBE9BSFK4O-1" value="Менеджер" parent="1" vertex="1">
+<mxGeometry x="660" y="271.25" width="30" height="60" as="geometry" />
+</mxCell>
+<mxCell id="SoOGTyhPSGBBE9BSFK4O-2" value="Дизайнер" parent="1" vertex="1">
+<mxGeometry x="660" y="108.75" width="30" height="60" as="geometry" />
+</mxCell>
+<mxCell id="SoOGTyhPSGBBE9BSFK4O-3" value="Поставщик" parent="1" vertex="1">
+<mxGeometry x="90" y="108.75" width="30" height="60" as="geometry" />
+</mxCell>
+<mxCell id="SoOGTyhPSGBBE9BSFK4O-5" value="Заказчик" parent="1" vertex="1">
+<mxGeometry x="90" y="232.5" width="30" height="60" as="geometry" />
+</mxCell>
+<mxCell id="SoOGTyhPSGBBE9BSFK4O-8" value="Закупает материалы&amp;nbsp;" parent="1" vertex="1">
+<mxGeometry x="450" y="211.25" width="160" height="40" as="geometry" />
+</mxCell>
+<mxCell id="SoOGTyhPSGBBE9BSFK4O-9" value="Принимает пожелания" parent="1" vertex="1">
+<mxGeometry x="450" y="256.25" width="160" height="40" as="geometry" />
+</mxCell>
+<mxCell id="SoOGTyhPSGBBE9BSFK4O-10" value="Принимает претензии" parent="1" vertex="1">
+<mxGeometry x="450" y="306.25" width="160" height="35" as="geometry" />
+</mxCell>
+<mxCell id="SoOGTyhPSGBBE9BSFK4O-11" value="Контролирует производство" parent="1" vertex="1">
+<mxGeometry x="450" y="351.25" width="160" height="40" as="geometry" />
+</mxCell>
+<mxCell id="Qk2cMjkQ7BWh0A80oVp3-10" value="" edge="1" parent="1" source="SoOGTyhPSGBBE9BSFK4O-14" target="SoOGTyhPSGBBE9BSFK4O-3">
+<mxGeometry relative="1" as="geometry" />
+</mxCell>
+<mxCell id="SoOGTyhPSGBBE9BSFK4O-14" value="Поставляет обувь" parent="1" vertex="1">
+<mxGeometry x="190" y="147.5" width="160" height="30" as="geometry" />
+</mxCell>
+<mxCell id="Qk2cMjkQ7BWh0A80oVp3-9" value="" edge="1" parent="1" source="SoOGTyhPSGBBE9BSFK4O-15" target="SoOGTyhPSGBBE9BSFK4O-3">
+<mxGeometry relative="1" as="geometry" />
+</mxCell>
+<mxCell id="SoOGTyhPSGBBE9BSFK4O-15" value="Поставляет материалы" parent="1" vertex="1">
+<mxGeometry x="190" y="97.5" width="160" height="30" as="geometry" />
+</mxCell>
+<mxCell id="Qk2cMjkQ7BWh0A80oVp3-12" value="" edge="1" parent="1" source="SoOGTyhPSGBBE9BSFK4O-16" target="SoOGTyhPSGBBE9BSFK4O-5">
+<mxGeometry relative="1" as="geometry" />
+</mxCell>
+<mxCell id="SoOGTyhPSGBBE9BSFK4O-16" value="Высказывает пожелания" parent="1" vertex="1">
+<mxGeometry x="190" y="247.5" width="160" height="30" as="geometry" />
+</mxCell>
+<mxCell id="Qk2cMjkQ7BWh0A80oVp3-11" value="" edge="1" parent="1" source="SoOGTyhPSGBBE9BSFK4O-17" target="SoOGTyhPSGBBE9BSFK4O-5">
+<mxGeometry relative="1" as="geometry" />
+</mxCell>
+<mxCell id="SoOGTyhPSGBBE9BSFK4O-17" value="Заказывает обувь" parent="1" vertex="1">
+<mxGeometry x="190" y="207.5" width="160" height="30" as="geometry" />
+</mxCell>
+<mxCell id="Qk2cMjkQ7BWh0A80oVp3-13" value="" edge="1" parent="1" source="SoOGTyhPSGBBE9BSFK4O-18" target="SoOGTyhPSGBBE9BSFK4O-5">
+<mxGeometry relative="1" as="geometry" />
+</mxCell>
+<mxCell id="SoOGTyhPSGBBE9BSFK4O-18" value="Высказывает претензии" pare
+nt="1" vertex="1">
+<mxGeometry x="190" y="287.5" width="160" height="30" as="geometry" />
+</mxCell>
+<mxCell id="Qk2cMjkQ7BWh0A80oVp3-7" edge="1" parent="1" source="SoOGTyhPSGBBE9BSFK4O-19" target="SoOGTyhPSGBBE9BSFK4O-2">
+<mxGeometry relative="1" as="geometry" />
+</mxCell>
+<mxCell id="SoOGTyhPSGBBE9BSFK4O-19" value="Определяет материал" parent="1" vertex="1">
+<mxGeometry x="450" y="150" width="160" height="30" as="geometry" />
+</mxCell>
+<mxCell id="Qk2cMjkQ7BWh0A80oVp3-6" edge="1" parent="1" source="SoOGTyhPSGBBE9BSFK4O-20" target="SoOGTyhPSGBBE9BSFK4O-2">
+<mxGeometry relative="1" as="geometry" />
+</mxCell>
+<mxCell id="SoOGTyhPSGBBE9BSFK4O-20" value="Создаёт дизайн-проект" parent="1" vertex="1">
+<mxGeometry x="450" y="97.5" width="160" height="37.5" as="geometry" />
+</mxCell>
+<mxCell id="SoOGTyhPSGBBE9BSFK4O-28" value="" parent="1" target="SoOGTyhPSGBBE9BSFK4O-8" edge="1" source="SoOGTyhPSGBBE9BSFK4O-1">
+<mxGeometry width="50" height="50" relative="1" as="geometry">
+<mxPoint x="150" y="100" as="sourcePoint" />
+<mxPoint x="180" y="62.5" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+</root>
+</mxGraphModel>
+</diagram>
+</mxfil
+e>

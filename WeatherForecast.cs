@@ -1,6 +1,6 @@
 using System;
 
-namespace Репозинторий
+namespace Repozitory
 {
     public class WeatherForecast
     {

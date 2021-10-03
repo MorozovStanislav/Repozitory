@@ -12,7 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
-namespace Репозинторий
+namespace Repozitory
 {
     public class Startup
     {
@@ -30,7 +30,7 @@ namespace Репозинторий
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Репозинторий", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Repozitory", Version = "v1" });
             });
         }
 
@@ -41,7 +41,7 @@ namespace Репозинторий
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Репозинторий v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Repozitory v1"));
             }
 
             app.UseHttpsRedirection();

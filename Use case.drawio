@@ -64,8 +64,7 @@
 <mxCell id="Qk2cMjkQ7BWh0A80oVp3-13" value="" edge="1" parent="1" source="SoOGTyhPSGBBE9BSFK4O-18" target="SoOGTyhPSGBBE9BSFK4O-5">
 <mxGeometry relative="1" as="geometry" />
 </mxCell>
-<mxCell id="SoOGTyhPSGBBE9BSFK4O-18" value="Высказывает претензии" pare
-nt="1" vertex="1">
+<mxCell id="SoOGTyhPSGBBE9BSFK4O-18" value="Высказывает претензии" parent="1" vertex="1">
 <mxGeometry x="190" y="287.5" width="160" height="30" as="geometry" />
 </mxCell>
 <mxCell id="Qk2cMjkQ7BWh0A80oVp3-7" edge="1" parent="1" source="SoOGTyhPSGBBE9BSFK4O-19" target="SoOGTyhPSGBBE9BSFK4O-2">
@@ -89,5 +88,4 @@ nt="1" vertex="1">
 </root>
 </mxGraphModel>
 </diagram>
-</mxfil
-e>
+</mxfile>

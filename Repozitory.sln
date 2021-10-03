@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repozitory", "Repozitory.csproj", "{29F04ED4-AF50-4E35-9FD3-DF22195ECE96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repozitory", "Repozitory.csproj", "{7942198C-0ACD-4CE4-891D-DBFBA65249CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{29F04ED4-AF50-4E35-9FD3-DF22195ECE96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{29F04ED4-AF50-4E35-9FD3-DF22195ECE96}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{29F04ED4-AF50-4E35-9FD3-DF22195ECE96}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{29F04ED4-AF50-4E35-9FD3-DF22195ECE96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7942198C-0ACD-4CE4-891D-DBFBA65249CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7942198C-0ACD-4CE4-891D-DBFBA65249CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7942198C-0ACD-4CE4-891D-DBFBA65249CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7942198C-0ACD-4CE4-891D-DBFBA65249CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4C10AC0F-4A51-4127-A1B1-874D9922DA8E}
+		SolutionGuid = {93853789-C6CD-4AF3-B150-3026A945EFAC}
 	EndGlobalSection
 EndGlobal

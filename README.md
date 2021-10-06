@@ -4,6 +4,19 @@
 
 [1. Описание предметной области](#PredmetnayaOblast)
 
+-[1.1 Проблема предметной области](#TrablPRO)
+
+[2. Анализ существовующих решений](#AnalizResheniy)
+
+[3. Пример програмного кода](#Programma)
+
+[4. Тестирование](#Test)
+
+[Заключение](#Itog)
+
+[Список Литературы](#Literatura)
+
+
 <a name = "introduction"/>
 
 ## Введение
@@ -19,26 +32,26 @@
 ### 1.1 Проблема предметной области
 
 
-<a name = "introduction"/>
+<a name = "AnalizResheniy"/>
 
 ## 2. Анализ существовующих решений
 
 
-<a name = "introduction"/>
+<a name = "Programma"/>
 
 ## 3. Пример програмного кода
 
 
-<a name = "introduction"/>
+<a name = "Test"/>
 
 ## 4. Тестирование
 
 
-<a name = "introduction"/>
+<a name = "Itog"/>
 
 ## Заключение
 
 
-<a name = "introduction"/>
+<a name = "Literatura"/>
 
 ## Список Литературы

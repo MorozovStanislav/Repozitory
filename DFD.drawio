@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-19T16:40:18.844Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36 Edg/94.0.992.50" etag="HPyOd2fL880Ec63eVceA" version="15.5.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-19T17:10:55.145Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36 Edg/94.0.992.50" etag="FZvRVnACRzrnp8YDOKFg" version="15.5.6" type="github">
   <diagram id="mXCVVQWNi-sslRLq3h-p" name="Page-1">
     <mxGraphModel dx="1906" dy="1047" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -209,7 +209,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-94WILKV2bw8eyf0Mif1-28" value="Заказы обуви" style="html=1;dashed=0;whitespace=wrap;shape=partialRectangle;right=0;" parent="1" vertex="1">
-          <mxGeometry x="-60" y="429" width="100" height="30" as="geometry" />
+          <mxGeometry x="-60" y="398.75" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-94WILKV2bw8eyf0Mif1-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=0;jumpStyle=none;jumpSize=10;orthogonalLoop=1;jettySize=auto;html=1;shadow=0;labelBorderColor=none;verticalAlign=middle;" parent="1" source="-94WILKV2bw8eyf0Mif1-34" target="-94WILKV2bw8eyf0Mif1-39" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -253,7 +253,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="zt_BTNwdfIF0JVOwdBa7-3" value="Пожелания" style="html=1;dashed=0;whitespace=wrap;shape=partialRectangle;right=0;" vertex="1" parent="1">
-          <mxGeometry x="-70" y="230" width="120" height="40" as="geometry" />
+          <mxGeometry x="-70" y="240" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

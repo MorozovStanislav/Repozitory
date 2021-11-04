@@ -12,23 +12,23 @@ namespace Shoe_store.Controllers
     public class ManagerController : ControllerBase
     {
 
-        [HttpPost("Purchasematerials")]
-        public string Purchasematerials(string str)
+        [HttpPost("PurchaseMaterials")]
+        public string PurchaseMaterials(string str)
         {
             return str; // Закупка материалов
         }
-        [HttpPost("Acceptswishes")]
-        public string Acceptswishes(string str)
+        [HttpPost("AcceptsWishes")]
+        public string AcceptsWishes(string str)
         {
             return str;// Принимает пожелания
         }
-        [HttpPost("Acceptsclaims")]
-        public string Acceptsclaims(string str)
+        [HttpPost("AcceptsClaims")]
+        public string AcceptsClaims(string str)
         {
             return str;// Принимает претензии
         }
-        [HttpPost("Controlsproduction")]
-        public string Controlsproduction(string str)
+        [HttpPost("ControlsProduction")]
+        public string ControlsProduction(string str)
         {
             return str;// Контролирует производство
         }

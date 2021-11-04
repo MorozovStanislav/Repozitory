@@ -12,13 +12,13 @@ namespace Shoe_store.Controllers
     public class DesignerController : ControllerBase
     {
 
-        [HttpPost("Createsdesignproject")]
-        public string Createsdesignproject(string str)
+        [HttpPost("CreatesdesignProject")]
+        public string CreatesdesignProject(string str)
         {
             return str; // Создаёт дизайн-проект
         }
-        [HttpPost("Definesmaterial")]
-        public string Definesmaterial(string str)
+        [HttpPost("DefinesMaterial")]
+        public string DefinesMaterial(string str)
         {
             return str;// Определяет материал
         }

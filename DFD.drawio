@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-04T07:14:09.132Z" agent="5.0 (Windows)" etag="NASxfKSimZyOKVCF6a5N" version="15.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-04T07:15:23.483Z" agent="5.0 (Windows)" etag="_SuL_B7Z0cKIgn0HPXu8" version="15.6.8" type="github">
   <diagram id="mXCVVQWNi-sslRLq3h-p" name="Page-1">
     <mxGraphModel dx="1038" dy="515" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -211,7 +211,7 @@
         <mxCell id="VUjanucP9Pqc0IY2dI_M-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="VUjanucP9Pqc0IY2dI_M-2" target="XSY1yeOnRQhpfpJGHAep-48" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="VUjanucP9Pqc0IY2dI_M-2" value="Номер посылки" style="html=1;dashed=0;whitespace=wrap;shape=partialRectangle;right=0;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+        <mxCell id="VUjanucP9Pqc0IY2dI_M-2" value="Посылка" style="html=1;dashed=0;whitespace=wrap;shape=partialRectangle;right=0;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="1200" y="680" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="VUjanucP9Pqc0IY2dI_M-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="VUjanucP9Pqc0IY2dI_M-3" target="XSY1yeOnRQhpfpJGHAep-48" edge="1">

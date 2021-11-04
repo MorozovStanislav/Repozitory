@@ -13,16 +13,16 @@ namespace Shoe_store.Controllers
     {
 
         [HttpPost("Ordersshoes")]
-        public string Ordersshoes(string str)
+        public string OrdersShoes(string str)
         {
             return str; // Заказывает обувь
         }
-        [HttpPost("Expresseswishes")]
+        [HttpPost("ExpressesWishes")]
         public string Expresseswishes(string str)
         {
             return str;// Высказывает пожелания
         }
-        [HttpPost("Expressesclaims")]
+        [HttpPost("ExpressesClaims")]
         public string Expressesclaims(string str)
         {
             return str;// Высказывает претензии

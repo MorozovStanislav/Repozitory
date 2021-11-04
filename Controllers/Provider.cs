@@ -12,13 +12,13 @@ namespace Shoe_store.Controllers
     public class ProviderController : ControllerBase
     {
 
-        [HttpPost("Suppliesmaterials")]
-        public string Suppliesmaterials(string str)
+        [HttpPost("SuppliesMaterials")]
+        public string SuppliesMaterials(string str)
         {
             return str; // Поставка материалов
         }
-        [HttpPost("Suppliesshoes")]
-        public string Suppliesshoes(string str)
+        [HttpPost("SuppliesShoes")]
+        public string SuppliesShoes(string str)
         {
             return str;// Поставка обуви
         }

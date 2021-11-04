@@ -12,18 +12,18 @@ namespace Shoe_store.Controllers
     public class CustomerController : ControllerBase
     {
 
-        [HttpPost("Ordersshoes")]
+        [HttpPost("OrdersShoes")]
         public string OrdersShoes(string str)
         {
             return str; // Заказывает обувь
         }
         [HttpPost("ExpressesWishes")]
-        public string Expresseswishes(string str)
+        public string ExpressesWishes(string str)
         {
             return str;// Высказывает пожелания
         }
         [HttpPost("ExpressesClaims")]
-        public string Expressesclaims(string str)
+        public string ExpressesClaims(string str)
         {
             return str;// Высказывает претензии
         }

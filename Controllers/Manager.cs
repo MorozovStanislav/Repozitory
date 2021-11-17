@@ -32,5 +32,29 @@ namespace Shoe_store.Controllers
         {
             return str;// Контролирует производство
         }
+
+        [HttpPost]
+        public string Create(string str)
+        {
+            return str;
+        }
+
+        [HttpGet]
+        public string Read(string str)
+        {
+            return str;
+        }
+
+        [HttpPut]
+        public string Update(string str)
+        {
+            return str;
+        }
+
+        [HttpDelete]
+        public string Delete(string str)
+        {
+            return str;
+        }
     }
 }

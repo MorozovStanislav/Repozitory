@@ -7,7 +7,7 @@ using Shoe_store.Storage;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace Shoe_store.Controllers
+namespace Shoe_store.Controller
 {
     [ApiController]
     [Route("/DesignProject")]

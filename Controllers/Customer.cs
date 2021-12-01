@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Shoe_store.Domain;
+using Shoe_store.Storage;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -51,8 +53,6 @@ namespace Shoe_store.Controllers
         {
             return Storage.CustomerStorage.Delete(customerID);
         }
-
-        
     }
 }
 

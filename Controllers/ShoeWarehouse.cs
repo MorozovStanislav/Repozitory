@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Shoe_store.Domain;
+using Shoe_store.Storage;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -11,28 +13,28 @@ namespace Shoe_store.Controllers
     [Route("/ShoeWarehouse")]
     public class ShoeWarehouseController : ControllerBase
     {
-        [HttpPost]
-        public string Create(string str)
+        [HttpPost("Create")]
+        public void Create(ShoeWarehouse shoeWarehouse)
         {
-            return str;
+            return Storage.ShoeWarehouseStorage.Create(shoeWarehouse);
         }
 
-        [HttpGet]
-        public string Read(string str)
+        [HttpGet("Read")]
+        public ShoeWarehouse Read(int shoeWarehouseID)
         {
-            return str;
+            return Storage.ShoeWarehouseStorage.Read(shoeWarehouseID);
         }
 
-        [HttpPut]
-        public string Update(string str)
+        [HttpPut("Update")]
+        public ShoeWarehouse Update(ShoeWarehouse shoeWarehouse)
         {
-            return str;
+            return Storage.ShoeWarehouseStorage.Update(shoeWarehouse);
         }
 
-        [HttpDelete]
-        public string Delete(string str)
+        [HttpDelete("Delete")]
+        public bool Delete(int shoeWarehouseID)
         {
-            return str;
+            return Storage.ShoeWarehouseStorage.Delete(shoeWarehouseID);
         }
     }
 }

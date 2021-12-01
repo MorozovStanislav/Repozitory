@@ -2,37 +2,39 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Shoe_store.Domain;
+using Shoe_store.Storage;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace Shoe_store.Controllers
 {
     [ApiController]
-    [Route("/Shoe")]
+    [Route("/Shoes")]
     public class ShoeController : ControllerBase
     {
-        [HttpPost]
-        public string Create(string str)
+        [HttpPost("Create")]
+        public void Create(Shoes shoes)
         {
-            return str;
+            return Storage.ShoesStorage.Create(shoes);
         }
 
-        [HttpGet]
-        public string Read(string str)
+        [HttpGet("Read")]
+        public Shoes Read(int shoesID)
         {
-            return str;
+            return Storage.ShoesStorage.Read(shoesID);
         }
 
-        [HttpPut]
-        public string Update(string str)
+        [HttpPut("Update")]
+        public Shoes Update(Shoes shoes)
         {
-            return str;
+            return Storage.ShoesStorage.Update(shoes);
         }
 
-        [HttpDelete]
-        public string Delete(string str)
+        [HttpDelete("Delete")]
+        public bool Delete(int shoesID)
         {
-            return str;
+            return Storage.ShoesStorage.Delete(shoesID);
         }
     }
 }

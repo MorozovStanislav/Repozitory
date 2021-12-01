@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Shoe_store.Domain;
+using Shoe_store.Storage;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -23,28 +25,28 @@ namespace Shoe_store.Controllers
             return str;// Поставка обуви
         }
 
-        [HttpPost]
-        public string Create(string str)
+        [HttpPost("Create")]
+        public void Create(Provider provider)
         {
-            return str;
+            return Storage.ProviderStorage.Create(provider);
         }
 
-        [HttpGet]
-        public string Read(string str)
+        [HttpGet("Read")]
+        public Provider Read(int providerID)
         {
-            return str;
+            return Storage.ProviderStorage.Read(providerID);
         }
 
-        [HttpPut]
-        public string Update(string str)
+        [HttpPut("Update")]
+        public Provider Update(Provider provider)
         {
-            return str;
+            return Storage.ProviderStorage.Update(provider);
         }
 
-        [HttpDelete]
-        public string Delete(string str)
+        [HttpDelete("Delete")]
+        public bool Delete(int providerID)
         {
-            return str;
+            return Storage.ProviderStorage.Delete(providerID);
         }
     }
 }

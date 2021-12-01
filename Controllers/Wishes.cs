@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Shoe_store.Domain;
+using Shoe_store.Storage;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -11,28 +13,28 @@ namespace Shoe_store.Controllers
     [Route("/Wishes")]
     public class WishesController : ControllerBase
     {
-        [HttpPost]
-        public string Create(string str)
+        [HttpPost("Create")]
+        public void Create(Wishes wishes)
         {
-            return str;
+            return Storage.WishesStorage.Create(wishes);
         }
 
-        [HttpGet]
-        public string Read(string str)
+        [HttpGet("Read")]
+        public Wishes Read(int wishesID)
         {
-            return str;
+            return Storage.WishesStorage.Read(wishesID);
         }
 
-        [HttpPut]
-        public string Update(string str)
+        [HttpPut("Update")]
+        public Wishes Update(Wishes wishes)
         {
-            return str;
+            return Storage.WishesStorage.Update(wishes);
         }
 
-        [HttpDelete]
-        public string Delete(string str)
+        [HttpDelete("Delete")]
+        public bool Delete(int wishesID)
         {
-            return str;
+            return Storage.WishesStorage.Delete(wishesID);
         }
     }
 }

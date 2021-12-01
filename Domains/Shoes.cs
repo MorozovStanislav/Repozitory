@@ -16,11 +16,13 @@ namespace ShoeStore.Domains
 
         public string  Colour { get; set; }
 
-        Shoes(int shoenumber, int size, string colour)
+        public Shoes() { }
+
+        public Shoes(int shoenumber, int size, string colour)
         {
-            this.ShoeNumber = shoenumber;
-            this.Size = size;
-            this.Colour = colour;
+            ShoeNumber = shoenumber;
+            Size = size;
+            Colour = colour;
         }
     }
 }

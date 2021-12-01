@@ -28,30 +28,31 @@ namespace Shoe_store.Controllers
             return str;// Высказывает претензии
         }
 
-        [HttpPost]
-        public string Create(string str)
+        [HttpPost("Create")]
+        public void Create(Customer customer)
         {
-            return str;
+            return Storage.CustomerStorage.Create(customer);
         }
 
-        [HttpGet]
-        public string Read(string str)
+        [HttpGet("Read")]
+        public Customer Read(int customerID)
         {
-            return str;
+            return Storage.CustomerStorage.Read(customerID);
         }
 
-        [HttpPut]
-        public string Update(string str)
+        [HttpPut("Update")]
+        public Customer Update(Customer customer)
         {
-            return str;
+            return Storage.CustomerStorage.Update(customer);
         }
 
-        [HttpDelete]
-        public string Delete(string str)
+        [HttpDelete("Delete")]
+        public bool Delete(int customerID)
         {
-            return str;
+            return Storage.CustomerStorage.Delete(customerID);
         }
+
+        
     }
 }
-
 

@@ -20,13 +20,15 @@ namespace ShoeStore.Domains
 
         public string Address { get; set; }
 
-        Customer(string firstname, string secondname, string lastname, int parcelnumber, string address)
+        public Customer() { }
+
+        public Customer(string firstname, string secondname, string lastname, int parcelnumber, string address)
         {
-            this.FirstName = firstname;
-            this.SecondName = secondname;
-            this.LastName = lastname;
-            this.ParcelNumber = parcelnumber;
-            this.Address = address;
+            FirstName = firstname;
+            SecondName = secondname;
+            LastName = lastname;
+            ParcelNumber = parcelnumber;
+            Address = address;
         }
     }
 }

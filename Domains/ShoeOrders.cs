@@ -24,15 +24,17 @@ namespace ShoeStore.Domains
 
         public int Count { get; set; }
 
-        ShoeOrger(int shoeordernumber, string firstname, string secondname, string lastname, int size, string namematerial, int count)
+        public ShoeOrger() { }
+
+        public ShoeOrger(int shoeordernumber, string firstname, string secondname, string lastname, int size, string namematerial, int count)
         {
-            this.ShoeOrderNumber = shoeordernumber;
-            this.FirstName = firstname;
-            this.SecondName = secondname;
-            this.LastName = lastname;
-            this.NameMaterial = namematerial;
-            this.Size = size;
-            this.Count = count;
+            ShoeOrderNumber = shoeordernumber;
+            FirstName = firstname;
+            SecondName = secondname;
+            LastName = lastname;
+            NameMaterial = namematerial;
+            Size = size;
+            Count = count;
         }
     }
 }

@@ -18,12 +18,14 @@ namespace ShoeStore.Domains
 
         public int NumberPackage { get; set; }
 
-        Provider(int numberprovider, int materiaordernumber, int shoesordernumber, int numberpackage)
+        public Provider() { }
+
+        public Provider(int numberprovider, int materiaordernumber, int shoesordernumber, int numberpackage)
         {
-            this.NumberProvider = numberpackage;
-            this.MaterialOrderNumber = materiaordernumber;
-            this.ShoesOrderNumber = shoesordernumber;
-            this.NumberPackage = numberpackage;
+            NumberProvider = numberpackage;
+            MaterialOrderNumber = materiaordernumber;
+            ShoesOrderNumber = shoesordernumber;
+            NumberPackage = numberpackage;
         }
     }
 }

@@ -16,11 +16,13 @@ namespace ShoeStore.Domains
 
         public int Count { get; set; }
 
-        Materials(int materialnumber, string namematerial, int count)
+        public Materials() { }
+
+        public Materials(int materialnumber, string namematerial, int count)
         {
-            this.MaterialNumber = materialnumber;
-            this.NameMaterial = namematerial;
-            this.Count = count;
+            MaterialNumber = materialnumber;
+            NameMaterial = namematerial;
+            Count = count;
         }
     }
 }

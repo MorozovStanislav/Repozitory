@@ -8,8 +8,8 @@ using Microsoft.Extensions.Logging;
 namespace Shoe_store.Controllers
 {
     [ApiController]
-    [Route("/Shoes")]
-    public class ShoesController : ControllerBase
+    [Route("/Shoe")]
+    public class ShoeController : ControllerBase
     {
         [HttpPost]
         public string Create(string str)

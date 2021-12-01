@@ -22,14 +22,16 @@ namespace ShoeStore.Domains
 
         public string Materials { get; set; }
 
-        DesignProject(int projectnumber, string firstname, string secondname, string lastname, int construction, string materials)
+        public DesignProject() { }
+
+        public DesignProject(int projectnumber, string firstname, string secondname, string lastname, int construction, string materials)
         {
-            this.ProjectNumber = projectnumber;
-            this.FirstName = firstname;
-            this.SecondName = secondname;
-            this.LastName = lastname;
-            this.Ñonstruction = construction;
-            this.Materials = materials;
+            ProjectNumber = projectnumber;
+            FirstName = firstname;
+            SecondName = secondname;
+            LastName = lastname;
+            Ñonstruction = construction;
+            Materials = materials;
         }
     }
 }

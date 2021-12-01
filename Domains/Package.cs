@@ -22,14 +22,16 @@ namespace ShoeStore.Domains
 
         public int Weight { get; set; }
 
-        Package(int parcelnumber, string firstname, string secondname, string lastname, string address, int weight)
+        public Package() { }
+
+        public Package(int parcelnumber, string firstname, string secondname, string lastname, string address, int weight)
         {
-            this.ParcelNumber = parcelnumber
-            this.FirstName = firstname;
-            this.SecondName = secondname;
-            this.LastName = lastname;
-            this.Address = address;
-            this.Weight = weight;
+            ParcelNumber = parcelnumber
+            FirstName = firstname;
+            SecondName = secondname;
+            LastName = lastname;
+            Address = address;
+            Weight = weight;
         }
     }
 }

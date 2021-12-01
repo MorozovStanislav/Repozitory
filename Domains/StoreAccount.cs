@@ -20,13 +20,15 @@ namespace ShoeStore.Domains
 
         public int MonetaryAmount  { get; set; }
 
-        StoreAccount(int numbertranslation, string firstname, string secondname, string lastname, int monetaryamount)
+        public StoreAccount() { }
+
+        public StoreAccount(int numbertranslation, string firstname, string secondname, string lastname, int monetaryamount)
         {
-            this.NumberTranslation = numbertranslation;
-            this.FirstName = firstname;
-            this.SecondName = secondname;
-            this.LastName = lastname;
-            this.MonetaryAmount = monetaryamount;
+            NumberTranslation = numbertranslation;
+            FirstName = firstname;
+            SecondName = secondname;
+            LastName = lastname;
+            MonetaryAmount = monetaryamount;
         }
     }
 }

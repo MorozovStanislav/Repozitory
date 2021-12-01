@@ -14,10 +14,12 @@ namespace ShoeStore.Domains
 
         public string ReceiptDate { get; set; }
 
-        MaterialWarehouse(int materialnumber, string receiptdate)
+        public MaterialWarehouse() { }
+
+        public MaterialWarehouse(int materialnumber, string receiptdate)
         {
-            this.MaterialNumber = materialnumber;
-            this.ReceiptDate = receiptdate;
+            MaterialNumber = materialnumber;
+            ReceiptDate = receiptdate;
         }
     }
 }

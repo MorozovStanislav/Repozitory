@@ -20,13 +20,15 @@ namespace ShoeStore.Domains
 
         public int Grade { get; set; }
 
-        Reviews(int comment, string firstname, string secondname, string lastname, int grade)
+        public Reviews() { }
+
+        public Reviews(int comment, string firstname, string secondname, string lastname, int grade)
         {
-            this.Comment = comment;
-            this.FirstName = firstname;
-            this.SecondName = secondname;
-            this.LastName = lastname;
-            this.Grade = grade;
+            Comment = comment;
+            FirstName = firstname;
+            SecondName = secondname;
+            LastName = lastname;
+            Grade = grade;
         }
     }
 }

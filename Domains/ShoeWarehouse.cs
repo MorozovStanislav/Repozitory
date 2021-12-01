@@ -12,9 +12,11 @@ namespace ShoeStore.Domains
     {
         public int ShoeNumber { get; set; }
 
-        ShoeWarehouse(int shoenumber)
+        public ShoeWarehouse() { }
+
+        public ShoeWarehouse(int shoenumber)
         {
-            this.ShoeNumber = shoenumber;
+            ShoeNumber = shoenumber;
         }
     }
 }

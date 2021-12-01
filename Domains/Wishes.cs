@@ -24,15 +24,17 @@ namespace ShoeStore.Domains
 
         public int OrderNumber { get; set; }
 
-        Wishes(string firstname, string secondname, string lastname, string colour, int size, int price, int ordernumber)
+        public Wishes() { }
+
+        public Wishes(string firstname, string secondname, string lastname, string colour, int size, int price, int ordernumber)
         {
-            this.FirstName = firstname;
-            this.SecondName = secondname;
-            this.LastName = lastname;
-            this.Size = size;
-            this.Colour = colour;
-            this.Price = price;
-            this.OrderNumber = ordernumber;
+            FirstName = firstname;
+            SecondName = secondname;
+            LastName = lastname;
+            Size = size;
+            Colour = colour;
+            Price = price;
+            OrderNumber = ordernumber;
         }
     }
 }

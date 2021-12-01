@@ -16,11 +16,13 @@ namespace ShoeStore.Domains
 
         public string NameMaterial { get; set; }
 
-        MaterialOrders(int materialordernumber, int quantity, string namematerial)
+        public MaterialOrders() { }
+
+        public MaterialOrders(int materialordernumber, int quantity, string namematerial)
         {
-            this.MaterialOrderNumber = materialordernumber;
-            this.Quantity = quantity;
-            this.NameMaterial = namematerial;
+            MaterialOrderNumber = materialordernumber;
+            Quantity = quantity;
+            NameMaterial = namematerial;
         }
     }
 }

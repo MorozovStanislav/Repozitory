@@ -8,7 +8,7 @@ namespace Shoe_store.Storage
     {
         public class MaterialOrdersStorage
         {
-            private Dictionary<int, MaterialOrders> MaterialOrdersx { get; } = new Dictionary<int, MaterialOrders>();
+            private Dictionary<int, MaterialOrders> MaterialOrdersx { get; } = new();
 
             public void Create(MaterialOrders materialOrders)
             {

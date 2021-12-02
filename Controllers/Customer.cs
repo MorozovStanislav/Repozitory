@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Shoe_store.Domain;
+﻿using Microsoft.AspNetCore.Mvc;
 using Shoe_store.Storage;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using ShoeStore.Domains;
 
-namespace Shoe_store.Controllers
+namespace Repozitory.Controllers
 {
     [ApiController]
     [Route("/Customer")]
@@ -33,25 +28,25 @@ namespace Shoe_store.Controllers
         [HttpPost("Create")]
         public void Create(Customer customer)
         {
-            return Storage.CustomerStorage.Create(customer);
+            CustomerStorage.Create(customer);
         }
 
         [HttpGet("Read")]
-        public Customer Read(int customerID)
+        public Customer Read(int customerId)
         {
-            return Storage.CustomerStorage.Read(customerID);
+            return CustomerStorage.Read(customerId);
         }
 
         [HttpPut("Update")]
-        public Customer Update(Customer customer)
+        public Customer Update(int id, Customer customer)
         {
-            return Storage.CustomerStorage.Update(customer);
+            return CustomerStorage.Update(id, customer);
         }
 
         [HttpDelete("Delete")]
-        public bool Delete(int customerID)
+        public bool Delete(int customerId)
         {
-            return Storage.CustomerStorage.Delete(customerID);
+            return CustomerStorage.Delete(customerId);
         }
     }
 }

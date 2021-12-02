@@ -10,6 +10,7 @@ namespace ShoeStore.Domains
 
     public class DesignProject
     {
+        public int DesignProjectId { get; set; }
         public int ProjectNumber { get; set; }
 
         public string FirstName { get; set; }
@@ -18,7 +19,7 @@ namespace ShoeStore.Domains
 
         public string LastName { get; set; }
 
-        public int Ñonstruction { get; set; }
+        public int Ð¡onstruction { get; set; }
 
         public string Materials { get; set; }
 
@@ -30,7 +31,7 @@ namespace ShoeStore.Domains
             FirstName = firstname;
             SecondName = secondname;
             LastName = lastname;
-            Ñonstruction = construction;
+            Ð¡onstruction = construction;
             Materials = materials;
         }
     }

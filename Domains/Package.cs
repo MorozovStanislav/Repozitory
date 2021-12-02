@@ -26,7 +26,7 @@ namespace ShoeStore.Domains
 
         public Package(int parcelnumber, string firstname, string secondname, string lastname, string address, int weight)
         {
-            ParcelNumber = parcelnumber
+            ParcelNumber = parcelnumber;
             FirstName = firstname;
             SecondName = secondname;
             LastName = lastname;

@@ -191,13 +191,82 @@ namespace Repozitory.Controllers
 <a name = "Test"/>
 
 ## 4 Тестирование
+После компиляции программы, открывается страница Swagger UI со списком сущностей и операций над ними (см. рисунок 4).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91194323/146276433-e3f7aa73-b6b0-4167-8ccc-9e4fc2ec04ff.png"></p>
+<p align="center">Рисунок 4 - Cтраница Swagger UI</p> 
+
+Работа основных методов CRUD на примере сущности Customer (см. рисунок 5)..
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91194323/146276810-31216e68-5efa-4c08-84c4-488b7504ea9a.png"></p>
+<p align="center">Рисунок 5 -Проверка работы методов CRUD</p> 
+
+Create позволяет добавлять новые строки в вашу таблицу (см. рисунок 6).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91194323/146278730-e4f7e4a4-5f9d-4d92-b190-b053a30a5f03.png"></p>
+<p align="center">Рисунок 6 - Окно метода создания</p> 
+
+Вводим необходимые данные и после успешного выполнения операции создания, получаем (см. рисунок 7).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91194323/146278789-28be328f-1d40-41ec-91b9-78740ae12ecb.png"></p>
+<p align="center">Рисунок 7 - Результат выполнения операции создания</p> 
+
+Функция Read позволяет извлекать определённые записи и считывать их значения 
+Покажем на примере как это работает (см. рисунок 8 - 10).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91194323/146278413-e1b85114-48ab-4f8d-8e87-0a99b6311fda.png"></p>
+<p align="center">Рисунок 8 - Окно функции чтения</p> 
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91194323/146278865-906aeb7d-8bf4-45ca-8cef-aceecab7c01e.png"></p>
+<p align="center">Рисунок 9 - Окно ввода значения для поиска</p> 
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91194323/146279270-32c69909-484f-4f61-afd5-a92d717eb12d.png"></p>
+<p align="center">Рисунок 10 - Окно результата вывода</p> 
+
+
+Редактирование записи (см. рисунок 11). Используется для изменения существующих записей в базе данных.
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91194323/146279620-d390a05d-9d22-4467-b09c-6ded5a51443d.png"></p>
+<p align="center">Рисунок 11 - Окно метода изменения</p> 
+
+Измениение информации. Ввод новых данных (см. рисунок 12).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91194323/146279750-b79bb4f3-4588-45b6-9cae-7c18b3cca1a0.png"></p>
+<p align="center">Рисунок 12 - Работа с методом обновления</p> 
+
+После выполнения операции выводится изменённая информация (см. рисунок 13).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91194323/146279864-68208def-84a4-49f0-b6b9-eb85e1b6ee8f.png"></p>
+<p align="center">Рисунок 13 - Результат выполнения операции обновления</p> 
+
+Delete - используется для удаления записи. Эта операция может принемать только два значения "true" или "false" (см. рисунок 14).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91194323/146280148-7ca83d17-be94-47fc-9aa2-d948bf02c550.png"></p>
+<p align="center">Рисунок 14 - Окно метода удаления</p> 
+
+Выполняем операцию удаления (см. рисунок 15).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91194323/146280350-96c79569-f23d-44b8-a0ee-b6c03c45d1d2.png"></p>
+<p align="center">Рисунок 15 - Работа с методом удаления</p> 
+
+Результат выполнения (см. рисунок 16).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91194323/146280483-53408dc8-4516-48a7-a9e4-7c0a7af93bca.png"></p>
+<p align="center">Рисунок 16 - Результат выполнения метода удаления</p> 
+
+Сделаем проверку на существование удалённой записи (см. рисунок 17).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91194323/146280720-58c4f094-d38a-4abc-949e-21aef137a3e5.png"></p>
+<p align="center">Рисунок 17 - Проверка</p> 
 
 
 <a name = "Itog"/>
 
 ## Заключение
 
-
 <a name = "Literatura"/>
 
 ## Список использованных источников
+[1] Виды обувных мастерских и их продукции [электронный ресурс] // "ОБУВНАЯ МАСТЕРСКАЯ" - Режим доступа: https://www.lelab.ru/support/19.html, свободный (дата обращения 02.12.2021).

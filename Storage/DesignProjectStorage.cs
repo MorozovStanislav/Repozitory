@@ -5,25 +5,25 @@ namespace Shoe_store.Storage
 {
     public class DesignProjectStorage
     {
-        private Dictionary<int, DesignProject> DesignProjects { get; } = new Dictionary<int, DesignProject>();
+        private static Dictionary<int, DesignProject> DesignProjects { get; } = new Dictionary<int, DesignProject>();
 
-        public void Create(DesignProject designProject)
+        public static void Create(DesignProject designProject)
         {
             DesignProjects.Add(designProject.DesignProjectId, designProject);
         }
 
-        public DesignProject Read(int designProjectId)
+        public static DesignProject Read(int designProjectId)
         {
             return DesignProjects[designProjectId];
         }
 
-        public DesignProject Update(int designProjectId, DesignProject newDesignProject)
+        public static DesignProject Update(int designProjectId, DesignProject newDesignProject)
         {
             DesignProjects[designProjectId] = newDesignProject;
             return DesignProjects[designProjectId];
         }
 
-        public bool Delete(int designProjectId)
+        public static bool Delete(int designProjectId)
         {
             return DesignProjects.Remove(designProjectId);
         }

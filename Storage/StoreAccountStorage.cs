@@ -1,35 +1,31 @@
-using Shoe_store.Domain;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using ShoeStore.Domains;
 
 namespace Shoe_store.Storage
 {
-    public class StoreAccount
+    public class StoreAccountStorage
     {
-        public class StoreAccountStorage
+        private static Dictionary<int, StoreAccount> StoreAccounts { get; } = new Dictionary<int, StoreAccount>();
+
+        public static void Create(StoreAccount storeAccount)
         {
-            private Dictionary<int, StoreAccount> StoreAccounts { get; } = new Dictionary<int, StoreAccount>();
+            StoreAccounts.Add(storeAccount.TranslationId, storeAccount);
+        }
 
-            public void Create(StoreAccount storeAccount)
-            {
-                StoreAccounts.Add(storeAccount.StoreAccountId, storeAccount);
-            }
+        public static StoreAccount Read(int translationId)
+        {
+            return StoreAccounts[translationId];
+        }
 
-            public StoreAccount Read(int storeAccountId)
-            {
-                return StoreAccounts[storeAccountId];
-            }
+        public static StoreAccount Update(int translationId, StoreAccount newStoreAccount)
+        {
+            StoreAccounts[translationId] = newStoreAccount;
+            return StoreAccounts[translationId];
+        }
 
-            public StoreAccount Update(int storeAccountId, StoreAccount newStoreAccount)
-            {
-                StoreAccounts[storeAccountId] = newStoreAccount;
-                return StoreAccounts[storeAccountId];
-            }
-
-            public bool Delete(int storeAccountId)
-            {
-                return StoreAccounts.Remove(storeAccountId);
-            }
+        public static bool Delete(int translationId)
+        {
+            return StoreAccounts.Remove(translationId);
         }
     }
 }

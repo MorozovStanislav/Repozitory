@@ -10,6 +10,8 @@ namespace ShoeStore.Domains
 
     public class Wishes
     {
+        public int WishesId { get; set; }
+
         public string FirstName { get; set; }
 
         public string SecondName { get; set; }

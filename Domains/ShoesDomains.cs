@@ -10,7 +10,7 @@ namespace ShoeStore.Domains
 
     public class Shoes
     {
-        public int ShoeNumber { get; set; }
+        public int ShoesId { get; set; }
 
         public int Size { get; set; }
 
@@ -18,9 +18,8 @@ namespace ShoeStore.Domains
 
         public Shoes() { }
 
-        public Shoes(int shoenumber, int size, string colour)
+        public Shoes(int size, string colour)
         {
-            ShoeNumber = shoenumber;
             Size = size;
             Colour = colour;
         }

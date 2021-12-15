@@ -1,35 +1,31 @@
-using Shoe_store.Domain;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using ShoeStore.Domains;
 
 namespace Shoe_store.Storage
 {
-    public class ShoeOrders
+    public class ShoeOrdersStorage
     {
-        public class ShoeOrdersStorage
+        private static Dictionary<int, ShoeOrders> ShoeOrdersx { get; } = new Dictionary<int, ShoeOrders>();
+
+        public static void Create(ShoeOrders shoeOrders)
         {
-            private Dictionary<int, ShoeOrders> ShoeOrdersx { get; } = new Dictionary<int, ShoeOrders>();
+            ShoeOrdersx.Add(shoeOrders.ShoeOrdersId, shoeOrders);
+        }
 
-            public void Create(ShoeOrders shoeOrders)
-            {
-                ShoeOrdersx.Add(shoeOrders.ShoeOrdersId, shoeOrders);
-            }
+        public static ShoeOrders Read(int shoeOrdersId)
+        {
+            return ShoeOrdersx[shoeOrdersId];
+        }
 
-            public ShoeOrders Read(int shoeOrdersId)
-            {
-                return ShoeOrdersx[shoeOrdersId];
-            }
+        public static ShoeOrders Update(int shoeOrdersId, ShoeOrders newShoeOrders)
+        {
+            ShoeOrdersx[shoeOrdersId] = newShoeOrders;
+            return ShoeOrdersx[shoeOrdersId];
+        }
 
-            public ShoeOrders Update(int shoeOrdersId, ShoeOrders newShoeOrders)
-            {
-                ShoeOrdersx[shoeOrdersId] = newShoeOrders;
-                return ShoeOrdersx[shoeOrdersId];
-            }
-
-            public bool Delete(int shoeOrdersId)
-            {
-                return ShoeOrdersx.Remove(shoeOrdersId);
-            }
+        public static bool Delete(int shoeOrdersId)
+        {
+            return ShoeOrdersx.Remove(shoeOrdersId);
         }
     }
 }

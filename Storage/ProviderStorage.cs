@@ -1,35 +1,31 @@
-using Shoe_store.Domain;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using ShoeStore.Domains;
 
 namespace Shoe_store.Storage
 {
-    public class Provider
+    public class ProviderStorage
     {
-        public class ProviderStorage
+        private static Dictionary<int, Provider> Providers { get; } = new Dictionary<int, Provider>();
+
+        public static void Create(Provider provider)
         {
-            private Dictionary<int, Provider> Providers { get; } = new Dictionary<int, Provider>();
+            Providers.Add(provider.ProviderId, provider);
+        }
 
-            public void Create(Provider provider)
-            {
-                Providers.Add(provider.ProviderId, provider);
-            }
+        public static Provider Read(int providerId)
+        {
+            return Providers[providerId];
+        }
 
-            public Provider Read(int providerId)
-            {
-                return Providers[providerId];
-            }
+        public static Provider Update(int providerId, Provider newProvider)
+        {
+            Providers[providerId] = newProvider;
+            return Providers[providerId];
+        }
 
-            public Provider Update(int providerId, Provider newDesignProject)
-            {
-                Providers[providerId] = newProvider;
-                return Providers[providerId];
-            }
-
-            public bool Delete(int providerId)
-            {
-                return Providers.Remove(providerId);
-            }
+        public static bool Delete(int providerId)
+        {
+            return Providers.Remove(providerId);
         }
     }
 }

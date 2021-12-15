@@ -10,15 +10,14 @@ namespace ShoeStore.Domains
 
     public class MaterialWarehouse
     {
-        public int MaterialNumber { get; set; }
+        public int MaterialWarehouseId { get; set; }
 
         public string ReceiptDate { get; set; }
 
         public MaterialWarehouse() { }
 
-        public MaterialWarehouse(int materialnumber, string receiptdate)
+        public MaterialWarehouse(string receiptdate)
         {
-            MaterialNumber = materialnumber;
             ReceiptDate = receiptdate;
         }
     }

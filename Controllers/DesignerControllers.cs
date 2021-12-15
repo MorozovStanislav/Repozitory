@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
+using Shoe_store.Storage;
+using ShoeStore.Domains;
 
-namespace Shoe_store.Controllers
+namespace Repozitory.Controllers
 {
     [ApiController]
     [Route("/Designer")]

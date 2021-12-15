@@ -3,7 +3,7 @@ using ShoeStore.Domains;
 
 namespace Shoe_store.Storage
 {
-    public static class CustomerStorage
+    public class CustomerStorage
     {
         private static Dictionary<int, Customer> Customers { get; } = new Dictionary<int, Customer>();
 

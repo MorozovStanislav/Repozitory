@@ -10,7 +10,7 @@ namespace ShoeStore.Domains
 
     public class Provider
     {
-        public int NumberProvider { get; set; }
+        public int ProviderId { get; set; }
 
         public int MaterialOrderNumber { get; set; }
 
@@ -20,9 +20,8 @@ namespace ShoeStore.Domains
 
         public Provider() { }
 
-        public Provider(int numberprovider, int materiaordernumber, int shoesordernumber, int numberpackage)
+        public Provider(int materiaordernumber, int shoesordernumber, int numberpackage)
         {
-            NumberProvider = numberpackage;
             MaterialOrderNumber = materiaordernumber;
             ShoesOrderNumber = shoesordernumber;
             NumberPackage = numberpackage;

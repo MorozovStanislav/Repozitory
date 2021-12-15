@@ -10,7 +10,7 @@ namespace ShoeStore.Domains
 
     public class Materials
     {
-        public int MaterialNumber { get; set; }
+        public int MaterialsId { get; set; }
 
         public string NameMaterial { get; set; }
 
@@ -18,9 +18,8 @@ namespace ShoeStore.Domains
 
         public Materials() { }
 
-        public Materials(int materialnumber, string namematerial, int count)
+        public Materials(string namematerial, int count)
         {
-            MaterialNumber = materialnumber;
             NameMaterial = namematerial;
             Count = count;
         }

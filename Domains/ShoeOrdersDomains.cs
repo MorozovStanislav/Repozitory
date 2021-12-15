@@ -7,10 +7,9 @@ using Microsoft.Extensions.Logging;
 
 namespace ShoeStore.Domains
 {
-
-    public class ShoeOrger
+    public class ShoeOrders
     {
-        public int ShoeOrderNumber { get; set; }
+        public int ShoeOrdersId { get; set; }
 
         public string FirstName { get; set; }
 
@@ -24,11 +23,10 @@ namespace ShoeStore.Domains
 
         public int Count { get; set; }
 
-        public ShoeOrger() { }
+        public ShoeOrders() { }
 
-        public ShoeOrger(int shoeordernumber, string firstname, string secondname, string lastname, int size, string namematerial, int count)
+        public ShoeOrders(string firstname, string secondname, string lastname, int size, string namematerial, int count)
         {
-            ShoeOrderNumber = shoeordernumber;
             FirstName = firstname;
             SecondName = secondname;
             LastName = lastname;

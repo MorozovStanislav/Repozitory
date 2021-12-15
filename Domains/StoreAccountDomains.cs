@@ -10,7 +10,7 @@ namespace ShoeStore.Domains
 
     public class StoreAccount
     {
-        public int NumberTranslation  { get; set; }
+        public int TranslationId  { get; set; }
 
         public string FirstName { get; set; }
 
@@ -22,9 +22,8 @@ namespace ShoeStore.Domains
 
         public StoreAccount() { }
 
-        public StoreAccount(int numbertranslation, string firstname, string secondname, string lastname, int monetaryamount)
+        public StoreAccount(string firstname, string secondname, string lastname, int monetaryamount)
         {
-            NumberTranslation = numbertranslation;
             FirstName = firstname;
             SecondName = secondname;
             LastName = lastname;

@@ -10,7 +10,7 @@ namespace ShoeStore.Domains
 
     public class Package
     {
-        public int ParcelNumber { get; set; }
+        public int PackageId { get; set; }
 
         public string FirstName { get; set; }
 
@@ -24,9 +24,8 @@ namespace ShoeStore.Domains
 
         public Package() { }
 
-        public Package(int parcelnumber, string firstname, string secondname, string lastname, string address, int weight)
+        public Package(string firstname, string secondname, string lastname, string address, int weight)
         {
-            ParcelNumber = parcelnumber;
             FirstName = firstname;
             SecondName = secondname;
             LastName = lastname;

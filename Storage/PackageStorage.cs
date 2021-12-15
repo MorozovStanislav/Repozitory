@@ -1,35 +1,31 @@
-using Shoe_store.Domain;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using ShoeStore.Domains;
 
 namespace Shoe_store.Storage
 {
-    public class Package
+    public class PackageStorage
     {
-        public class PackageStorage
+        private static Dictionary<int, Package> Packages { get; } = new Dictionary<int, Package>();
+
+        public static void Create(Package package)
         {
-            private Dictionary<int, Package> Packages { get; } = new Dictionary<int, Package>();
+            Packages.Add(package.PackageId, package);
+        }
 
-            public void Create(Package package)
-            {
-                Packages.Add(package.PackageId, package);
-            }
+        public static Package Read(int packageId)
+        {
+            return Packages[packageId];
+        }
 
-            public Package Read(int packageId)
-            {
-                return Packages[packageId];
-            }
+        public static Package Update(int packageId, Package newPackage)
+        {
+            Packages[packageId] = newPackage;
+            return Packages[packageId];
+        }
 
-            public Package Update(int packageId, Package newPackage)
-            {
-                Packages[packageId] = newPackage;
-                return Packages[packageId];
-            }
-
-            public bool Delete(int packageId)
-            {
-                return Packages.Remove(packageId);
-            }
+        public static bool Delete(int packageId)
+        {
+            return Packages.Remove(packageId);
         }
     }
 }

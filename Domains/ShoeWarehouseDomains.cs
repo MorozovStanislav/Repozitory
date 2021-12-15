@@ -5,18 +5,21 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
+
 namespace ShoeStore.Domains
 {
 
     public class ShoeWarehouse
     {
-        public int ShoeNumber { get; set; }
+        public int ShoeWarehouseId { get; set; }
+
+        public string Address { get; set; }
 
         public ShoeWarehouse() { }
 
-        public ShoeWarehouse(int shoenumber)
+        public ShoeWarehouse(string address)
         {
-            ShoeNumber = shoenumber;
+            Address = address;
         }
     }
 }

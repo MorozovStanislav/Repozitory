@@ -11,7 +11,6 @@ namespace ShoeStore.Domains
     public class DesignProject
     {
         public int DesignProjectId { get; set; }
-        public int ProjectNumber { get; set; }
 
         public string FirstName { get; set; }
 
@@ -25,9 +24,8 @@ namespace ShoeStore.Domains
 
         public DesignProject() { }
 
-        public DesignProject(int projectnumber, string firstname, string secondname, string lastname, int construction, string materials)
+        public DesignProject(string firstname, string secondname, string lastname, int construction, string materials)
         {
-            ProjectNumber = projectnumber;
             FirstName = firstname;
             SecondName = secondname;
             LastName = lastname;

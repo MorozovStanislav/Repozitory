@@ -1,35 +1,31 @@
-using Shoe_store.Domain;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using ShoeStore.Domains;
 
 namespace Shoe_store.Storage
 {
-    public class MaterialOrders
+    public class MaterialOrdersStorage
     {
-        public class MaterialOrdersStorage
+        private static Dictionary<int, MaterialOrders> MaterialOrdersx { get; } = new Dictionary<int, MaterialOrders>();
+
+        public static void Create(MaterialOrders materialOrders)
         {
-            private Dictionary<int, MaterialOrders> MaterialOrdersx { get; } = new();
+            MaterialOrdersx.Add(materialOrders.MaterialOrderId, materialOrders);
+        }
 
-            public void Create(MaterialOrders materialOrders)
-            {
-                MaterialOrdersx.Add(MaterialOrders.MaterialOrdersId, materialOrders);
-            }
+        public static MaterialOrders Read(int materialOrdersId)
+        {
+            return MaterialOrdersx[materialOrdersId];
+        }
 
-            public MaterialOrders Read(int materialOrdersId)
-            {
-                return MaterialOrdersx[materialOrdersId];
-            }
+        public static MaterialOrders Update(int materialOrdersId, MaterialOrders newMaterialOrders)
+        {
+            MaterialOrdersx[materialOrdersId] = newMaterialOrders;
+            return MaterialOrdersx[materialOrdersId];
+        }
 
-            public MaterialOrders Update(int materialOrdersId, MaterialOrders newMaterialOrders)
-            {
-                MaterialOrdersx[materialOrdersId] = newMaterialOrders;
-                return MaterialOrdersx[materialOrdersId];
-            }
-
-            public bool Delete(int materialOrdersId)
-            {
-                return MaterialOrdersx.Remove(materialOrdersId);
-            }
+        public static bool Delete(int materialOrdersId)
+        {
+            return MaterialOrdersx.Remove(materialOrdersId);
         }
     }
 }

@@ -1,3 +1,5 @@
+using ShoeStore.Domains;
+
 namespace Shoe_store.Storage
 {
     public static class Storage

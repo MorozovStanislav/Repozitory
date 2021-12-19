@@ -16,7 +16,7 @@
 
 [Заключение](#Itog)
 
-[Список Литературы](#Literatura)
+[Список литературы](#Literatura)
 
 
 <a name = "introduction"/>

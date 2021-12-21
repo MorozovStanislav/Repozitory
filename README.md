@@ -189,6 +189,7 @@ namespace Repozitory.Controllers
 ```
 
 Пример общего хранилища (листинг 5).
+
 <br/> Листинг 5 - Общее хранилище
 ```csharp
  public static class Storage
